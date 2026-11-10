@@ -1,0 +1,19 @@
+# Sistema Operacional e Arquivos Temporários
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.bak
+*.tmp
+*.log
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Dependências (se houver no futuro)
+node_modules/
+.npm/
