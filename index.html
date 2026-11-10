@@ -3090,19 +3090,33 @@
       .pro-glider-container {
         margin-bottom: 1.75rem;
         padding: 0 0.5rem;
+        display: flex;
+        justify-content: center;
       }
       .pro-glider-wrap {
-        gap: 0.25rem;
+        gap: 6px;
         padding: 4px;
+        justify-content: center;
+        border-radius: 9999px;
       }
       .pro-glider-btn {
-        padding: 0.55rem 0.85rem;
-        font-size: 0.78rem;
-        gap: 0.35rem;
+        width: 44px;
+        height: 44px;
+        padding: 0 !important;
+        justify-content: center;
+        border-radius: 50% !important;
+      }
+      .pro-glider-btn span {
+        display: none !important;
       }
       .pro-glider-btn svg {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
+      }
+      .pro-glider-pill {
+        border-radius: 50% !important;
+        height: calc(100% - 8px);
+        top: 4px;
       }
     }
 
@@ -6021,20 +6035,20 @@
         <div class="pro-glider-container reveal-item">
           <div class="pro-glider-wrap" role="tablist" aria-label="Filtrar cursos profesionales">
             <div class="pro-glider-pill" id="proGliderPill"></div>
-            <button type="button" class="pro-glider-btn active" data-filter="cap" role="tab" aria-selected="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+            <button type="button" class="pro-glider-btn active" data-filter="cap" role="tab" aria-selected="true" title="CAP los Sábados" aria-label="CAP los Sábados">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
               <span>CAP los Sábados</span>
             </button>
-            <button type="button" class="pro-glider-btn" data-filter="puntos" role="tab" aria-selected="false">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <button type="button" class="pro-glider-btn" data-filter="puntos" role="tab" aria-selected="false" title="Recuperación Puntos DGT" aria-label="Recuperación Puntos DGT">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <span>Recuperación Puntos DGT</span>
             </button>
-            <button type="button" class="pro-glider-btn" data-filter="maquinaria" role="tab" aria-selected="false">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-              <span>Maquinaria & PEMP</span>
+            <button type="button" class="pro-glider-btn" data-filter="maquinaria" role="tab" aria-selected="false" title="Maquinaria &amp; PEMP" aria-label="Maquinaria &amp; PEMP">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <span>Maquinaria &amp; PEMP</span>
             </button>
-            <button type="button" class="pro-glider-btn" data-filter="tacografo" role="tab" aria-selected="false">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <button type="button" class="pro-glider-btn" data-filter="tacografo" role="tab" aria-selected="false" title="Tarjeta Tacógrafo" aria-label="Tarjeta Tacógrafo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
               <span>Tarjeta Tacógrafo</span>
             </button>
           </div>
